@@ -1,0 +1,28 @@
+<ion-view view-title="destination">
+  <ion-content>
+<ion-item>
+  <ion-label stacked>Current Location</ion-label>
+  <ion-input></ion-input>
+</ion-item>
+<button ion-button ui-sref="home.user">Change Location</button>
+<br/>
+<br/>
+<ion-item>
+  <ion-label>Destination</ion-label>
+  <ion-select [(ngModel)]="destination">
+    <ion-option value="d1">d1</ion-option>
+    <ion-option value="d2">d2</ion-option>
+  </ion-select>
+</ion-item>
+<br/>
+<br/>
+<ion-item>
+  <ion-label>Recommendation</ion-label>
+  <ion-select [(ngModel)]="recommendation">
+    <ion-option value="r1">r1</ion-option>
+    <ion-option value="r2">r2</ion-option>
+  </ion-select>
+</ion-item>
+</ion-content>
+
+</ion-view>
