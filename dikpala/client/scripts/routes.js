@@ -1,7 +1,7 @@
 import { Config } from 'angular-ecmascript/module-helpers';
 
 import homeTemplateUrl from '../templates/home.html';
-import userTemplateUrl from '../templates/user.html';
+import scanTemplateUrl from '../templates/scan.html';
 import destinationTemplateUrl from '../templates/destination.html';
 import mapTemplateUrl from '../templates/map.html';
 import mapimageTemplateUrl from '../templates/mapimage.html';
@@ -15,9 +15,9 @@ export default class RoutesConfig extends Config {
             templateUrl: homeTemplateUrl
           }
         )
-      .state('home.user', {
-        url: '/user',
-            templateUrl: userTemplateUrl
+      .state('scan', {
+        url: '/scan',
+            templateUrl: scanTemplateUrl
           }
 
         )
@@ -45,7 +45,7 @@ export default class RoutesConfig extends Config {
             })
 
 
-    this.$urlRouterProvider.otherwise('home/user');
+    this.$urlRouterProvider.otherwise('/home');
   }
 }
 

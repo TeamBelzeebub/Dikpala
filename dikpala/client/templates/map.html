@@ -1,12 +1,11 @@
-<ion-nav-view view-title="map">
-<ion-img width="80" height="80" src="..."></ion-img>
-
-<button ion-button>Img Route</button>
-<button ion-button>Text Route</button>
-
-<br/>
-<br/>
-
-<button ion-button>Lost</button>
-<button ion-button>Change Destination</button>
-</ion-nav-view>
+<ion-view title="Map" id="page4">
+  <ion-content padding="true" class="has-header">
+    <div style="margin: 0px; line-height: 250px; background-color: rgb(232, 235, 239); text-align: center;">
+      <i class="icon ion-image" style="font-size: 64px; color: rgb(136, 136, 136); vertical-align: middle;"></i>
+    </div>
+    <button id="map-button6" style="border-radius:20px 20px 20px 20px;" class="button button-positive">Route Image</button>
+    <button id="map-button7" style="border-radius:20px 20px 20px 20px;" class="button button-positive">Route Text</button>
+    <a ui-sref="scan()" id="map-button9" style="border-radius:23px 23px 23px 23px;" class="button button-positive button-block">Lost?</a>
+    <a ui-sref="destination()" id="map-button10" style="border-radius:20px 20px 20px 20px;" class="button button-positive button-block">Change Destination</a>
+  </ion-content>
+</ion-view>

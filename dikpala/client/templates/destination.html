@@ -1,28 +1,22 @@
-<ion-view view-title="destination">
-  <ion-content>
-<ion-item>
-  <ion-label stacked>Current Location</ion-label>
-  <ion-input></ion-input>
-</ion-item>
-<button ion-button ui-sref="home.user">Change Location</button>
-<br/>
-<br/>
-<ion-item>
-  <ion-label>Destination</ion-label>
-  <ion-select [(ngModel)]="destination">
-    <ion-option value="d1">d1</ion-option>
-    <ion-option value="d2">d2</ion-option>
-  </ion-select>
-</ion-item>
-<br/>
-<br/>
-<ion-item>
-  <ion-label>Recommendation</ion-label>
-  <ion-select [(ngModel)]="recommendation">
-    <ion-option value="r1">r1</ion-option>
-    <ion-option value="r2">r2</ion-option>
-  </ion-select>
-</ion-item>
-</ion-content>
-
+<ion-view title="Destination" id="page3">
+  <ion-content padding="true" class="has-header">
+    <div class="spacer" style="width: 300px; height: 48px;"></div>
+    <ion-list id="destination-list3">
+      <ion-item id="destination-list-item5">Source</ion-item>
+    </ion-list>
+    <a ui-sref="scan()" id="destination-button5" style="border-radius:20px 20px 20px 20px;" class="button button-positive button-block">Change Source</a>
+    <div class="spacer" style="width: 300px; height: 22px;"></div>
+    <form id="destination-form2" class="list">
+      <label class="item item-select" id="destination-select1">
+        <span class="input-label">Destination</span>
+        <select></select>
+      </label>
+      <div class="spacer" style="width: 300px; height: 22px;"></div>
+      <ion-item class="item-divider" id="destination-list-item-divider2"> Recommendations</ion-item>
+      <label class="item item-select" id="destination-select2">
+        <span class="input-label">List</span>
+        <select></select>
+      </label>
+    </form>
+  </ion-content>
 </ion-view>

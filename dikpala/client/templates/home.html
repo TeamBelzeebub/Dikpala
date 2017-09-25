@@ -1,11 +1,7 @@
-
-<ion-nav-view>  <ion-content>
-<button class="button button-block" ui-sref="home.user">
-   User
-</button>
-
-<button class="button button-full">
-   Implementer
-</button>
-</ion-content>
-</ion-nav-view>
+<ion-view title="Home" id="page1">
+  <ion-content padding="true" class="has-header">
+    <div class="spacer" style="width: 300px; height: 162px;"></div>
+    <a ui-sref="scan()" id="home-button2" style="border-radius:20px 20px 20px 20px;" class="button button-positive button-block">For Users</a>
+    <button id="home-button1" style="border-radius:20px 20px 20px 20px;" class="button button-positive button-block">For Implementers</button>
+  </ion-content>
+</ion-view>
