@@ -17,7 +17,8 @@ export default class RoutesConfig extends Config {
         )
       .state('home.user', {
         url: '/user',
-            templateUrl: userTemplateUrl
+            templateUrl: userTemplateUrl,
+            controller: 'UserCtrl as user'
           }
 
         )
@@ -33,7 +34,7 @@ export default class RoutesConfig extends Config {
             }
 
         )
-        .state('hmapimage', {
+        .state('mapimage', {
           url: '/mapimage',
               templateUrl: mapimageTemplateUrl
             }

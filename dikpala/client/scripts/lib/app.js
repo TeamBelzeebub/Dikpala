@@ -9,7 +9,7 @@ import { Meteor } from 'meteor/meteor';
 import Loader from 'angular-ecmascript/module-loader';
 
 import RoutesConfig from '../routes';
-import DestinationCtrl from '../controllers/destination.controller.js';
+import UserCtrl from '../controllers/user.controller.js';
 // Modules
 
 const App = 'dikpala';
@@ -22,7 +22,8 @@ Angular.module(App, [
 
 
 new Loader(App)
-  .load(RoutesConfig);
+  .load(RoutesConfig)
+  .load(UserCtrl);
 
 
 // Startup
