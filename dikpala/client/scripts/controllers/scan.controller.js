@@ -2,7 +2,7 @@ import { MeteorCameraUI } from 'meteor/okland:camera-ui';
 import { Controller } from 'angular-ecmascript/module-helpers';
 
 
-export default class UserCtrl extends Controller {
+export default class ScanCtrl extends Controller {
  constructor() {
     super(...arguments);
 
@@ -26,5 +26,5 @@ export default class UserCtrl extends Controller {
  }
 }
 
-UserCtrl.$name = 'UserCtrl';
-UserCtrl.$inject = ['$state', '$log'];
+ScanCtrl.$name = 'ScanCtrl';
+ScanCtrl.$inject = ['$state', '$log'];
